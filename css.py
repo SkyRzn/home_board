@@ -38,6 +38,10 @@ def mainSS(col, bgcol, font, pleft = 10, ptop = 0, border_width = 1, border_radi
 	res += '  border-style: solid;\n'
 	res += '}\n'
 
+	res += 'QLabel[enabled=false] {\n'
+	res += '  border-style: dotted;\n'
+	res += '}\n'
+
 	return res
 
 def boxSS(col, ptop = None, pleft = None, font = None):

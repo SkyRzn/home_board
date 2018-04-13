@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>480</height>
+    <width>664</width>
+    <height>456</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -95,6 +95,9 @@ border-color: rgba(0, 48, 64, 255);
      </item>
      <item>
       <widget class="QLabel" name="homeLabel">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -141,6 +144,9 @@ stop:1 rgba(64, 48, 0, 255)
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QLabel" name="streetLabel">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -168,7 +174,7 @@ stop:1 rgba(32, 48, 0, 255)
         <enum>QFrame::NoFrame</enum>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;-12.85 &lt;span style=&quot; font-size:50px;&quot;&gt;°C&lt;/span&gt;&lt;/p&gt;&lt;p&gt;100.0 &lt;span style=&quot; font-size:50px;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>
@@ -183,6 +189,9 @@ stop:1 rgba(32, 48, 0, 255)
      </item>
      <item>
       <widget class="QLabel" name="balconyLabel">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -214,6 +223,9 @@ stop:1 rgba(76, 0, 0, 255)
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
        </property>
        <property name="margin">
         <number>0</number>

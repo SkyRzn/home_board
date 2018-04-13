@@ -25,7 +25,7 @@ except AttributeError:
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
-        MainWindow.resize(640, 480)
+        MainWindow.resize(664, 456)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -80,6 +80,7 @@ class Ui_MainWindow(object):
         self.clockLabel.setObjectName(_fromUtf8("clockLabel"))
         self.verticalLayout_2.addWidget(self.clockLabel)
         self.homeLabel = QtGui.QLabel(MainWindow)
+        self.homeLabel.setEnabled(False)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -107,6 +108,7 @@ class Ui_MainWindow(object):
         self.verticalLayout = QtGui.QVBoxLayout()
         self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
         self.streetLabel = QtGui.QLabel(MainWindow)
+        self.streetLabel.setEnabled(False)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -131,6 +133,7 @@ class Ui_MainWindow(object):
         self.streetLabel.setObjectName(_fromUtf8("streetLabel"))
         self.verticalLayout.addWidget(self.streetLabel)
         self.balconyLabel = QtGui.QLabel(MainWindow)
+        self.balconyLabel.setEnabled(False)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -151,6 +154,7 @@ class Ui_MainWindow(object):
 ""))
         self.balconyLabel.setFrameShape(QtGui.QFrame.NoFrame)
         self.balconyLabel.setTextFormat(QtCore.Qt.RichText)
+        self.balconyLabel.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.balconyLabel.setIndent(0)
         self.balconyLabel.setObjectName(_fromUtf8("balconyLabel"))
         self.verticalLayout.addWidget(self.balconyLabel)
@@ -163,6 +167,6 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "Home board", None))
         self.clockLabel.setText(_translate("MainWindow", "18:22", None))
         self.homeLabel.setText(_translate("MainWindow", "<html><head/><body><p>760.0 <span style=\" font-size:50px;\">мм</span><br/>-12.85 <span style=\" font-size:50px;\">°C</span><br/>100.0 <span style=\" font-size:50px;\">%</span></p></body></html>", None))
-        self.streetLabel.setText(_translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", None))
+        self.streetLabel.setText(_translate("MainWindow", "<html><head/><body><p>-12.85 <span style=\" font-size:50px;\">°C</span></p><p>100.0 <span style=\" font-size:50px;\">%</span></p></body></html>", None))
         self.balconyLabel.setText(_translate("MainWindow", "<html><head/><body><p>-12.85 <span style=\" font-size:50px;\">°C</span></p><p>100.0 <span style=\" font-size:50px;\">%</span></p></body></html>", None))
 

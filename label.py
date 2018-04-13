@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+####### FIXME remove
 
 
 from PyQt4.QtCore import QString
